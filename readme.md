@@ -17,6 +17,7 @@ git remote add origin
 ```
 
 ## Usage
+
 Now  we are ready to add this project as an extension in our Chrome browser.<br/> 
 * First Select More Tools and then choose Extensions from the browser menu. ![](/images/1.png) <br/> 
 * After choosing Extensions, it redirects to the extensions page in Chrome. Make sure to enable the Developer mode here. ![](/images/2.png)<br/> 
@@ -24,6 +25,7 @@ Now  we are ready to add this project as an extension in our Chrome browser.<br/
 * the extension is available in our Chrome extension store. <br/> 
 <br/> 
 <br/> 
+
 ## Features implemented
 
 - [x] 	Extension should work only in selected URLs(test page) 
