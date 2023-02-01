@@ -3,7 +3,7 @@
 console.log("contentScript");
 var element = document.documentElement;
 
-// 2.	The browser should open in full screen mode.
+
 const enterFullScreen = ()=> {
     if(element.requestFullscreen) {
       element.requestFullscreen();
@@ -22,6 +22,9 @@ btno[0].addEventListener("click", function(){
     enterFullScreen();
 });
 
+
+
+
 document.addEventListener("visibilitychange", (event) => {
     if (document.visibilityState == "visible") {
       console.log("tab is active")
@@ -33,7 +36,7 @@ document.addEventListener("visibilitychange", (event) => {
 
 (async () => {
   var response = await chrome.runtime.sendMessage({greeting: "hello"});
-  
+   
   if(response.length > 1){
     window.alert("Please close all the tabs before starting the exam");
     

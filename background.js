@@ -14,5 +14,3 @@ chrome.tabs.onUpdated.addListener(() => {
   }); 
 });
 
-
-// 4.	More than one tab can’t be opened.
