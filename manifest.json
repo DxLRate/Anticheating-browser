@@ -22,7 +22,7 @@
       "js": ["/scripts/contentScript.js"]
     },
     {
-      "matches": ["https://*.youtube.com/*"],
+      "matches": ["https://*.car-rental-app-c2b4f.web.app/cars*"],
       "js": ["/scripts/endTest.js"]
     }
   ]

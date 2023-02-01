@@ -53,18 +53,18 @@ function tableCreate() {
   tableCreate();
 
 
-// document.addEventListener("visibilitychange", (event) => {
-//     if (document.visibilityState == "visible") {
-//       console.log("tab is active")
-//     } else {
-//       window.alert("please dont leave");
-//     }
-// });
+document.addEventListener("visibilitychange", (event) => {
+    if (document.visibilityState == "visible") {
+      console.log("tab is active")
+    } else {
+      window.alert("your test will end if you leave this window");
+    }
+});
 
 
 (async () => {
   var response = await chrome.runtime.sendMessage({greeting: "hello"});
-  // do something with response here, not outside the function
+  
   if(response.length > 1){
     window.alert("Please close all the tabs before starting the exam");
     
