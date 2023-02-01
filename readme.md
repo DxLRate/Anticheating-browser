@@ -12,7 +12,7 @@ Download the package or install using git.
 git init 
 git add .
 git commit -m "initialization"
-git branch -B main
+git branch -M main
 git remote add origin 
 ```
 
