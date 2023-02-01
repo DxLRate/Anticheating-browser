@@ -31,6 +31,7 @@ Now  we are ready to add this project as an extension in our Chrome browser.<br/
 - [X]  	The browser should open in full screen mode.
 - [x]  Pop up should be shown when someone switches between 2 tabs or Application.
 - [x]	More than one tab can’t be opened.
+- [x]  Internet speed check on extension popup
 
 ## Instruction for usage
 - for prototype purpose I have implemented this project on one of my projects 'https://www.car-rental-app-c2b4f.web.app'. But you can can implement all the features on any specific URL by just changing 'matches' parameter under 'content_scripts' in manifest.json.  

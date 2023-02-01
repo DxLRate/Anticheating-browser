@@ -1,3 +1,4 @@
+console.log("closed");
 var element = document.documentElement;
 console.log("closed");
 function exitFullScreen() {

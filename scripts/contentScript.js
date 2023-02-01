@@ -3,7 +3,6 @@
 console.log("contentScript");
 var element = document.documentElement;
 
-
 const enterFullScreen = ()=> {
     if(element.requestFullscreen) {
       element.requestFullscreen();
@@ -14,6 +13,13 @@ const enterFullScreen = ()=> {
     }else if(element.msRequestFullscreen) {
       element.msRequestFullscreen();      // IE/Edge
     }
+  document.oncontextmenu = function (e)        //check for the right click
+  {
+    return false;
+  }
+  document.ondragstart = function (e) {
+    return false;
+  }
 };
 let btno = document.getElementsByClassName("car__btn-details");
 btno[0].addEventListener("click", function(){
@@ -42,4 +48,6 @@ document.addEventListener("visibilitychange", (event) => {
     
   }
 })();
+
+
 
