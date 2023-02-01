@@ -22,37 +22,6 @@ btno[0].addEventListener("click", function(){
     enterFullScreen();
 });
 
-function tableCreate() {
-    const body = document.body,
-          tbl = document.createElement('table');
-    tbl.style.width = '100px';
-    tbl.style.border = '1px solid black';
-  const btn = document.createElement('button');
-  btn.style.width = '100px';
-  btn.style.height = '50px';
-  btn.addEventListener('click', ()=>{
-    internetTest();
-  });
-    for (let i = 0; i < 3; i++) {
-      const tr = tbl.insertRow();
-      for (let j = 0; j < 2; j++) {
-        if (i === 2 && j === 1) {
-          break;
-        } else {
-          const td = tr.insertCell();
-          td.appendChild(document.createTextNode(`Cell I${i}/J${j}`));
-          td.style.border = '1px solid black';
-          if (i === 1 && j === 1) {
-            td.setAttribute('rowSpan', '2');
-          }
-        }
-      }
-    }
-    body.appendChild(btn);
-}
-  tableCreate();
-
-
 document.addEventListener("visibilitychange", (event) => {
     if (document.visibilityState == "visible") {
       console.log("tab is active")
