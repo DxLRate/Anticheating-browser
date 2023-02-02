@@ -24,10 +24,10 @@ btnint.addEventListener('click', function(){
     }
 });
 
-const btnaudio = document.getElementById('audiochk');
-btnaudio.addEventListener('click', function(){
-    console.log("audio");
-});
+// const btnaudio = document.getElementById('audiochk');
+// btnaudio.addEventListener('click', function(){
+//     console.log("audio");
+// });
 
 
 
