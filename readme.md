@@ -31,7 +31,7 @@ Now  we are ready to add this project as an extension in our Chrome browser.<br/
 - [X]  	The browser should open in full screen mode.
 - [x]  Pop up should be shown when someone switches between 2 tabs or Application.
 - [x]	More than one tab can’t be opened.
-- [x] close the tab by the normal close button [shortcut keys should not work too].(User should only be able to close tab by clicking on Button provided )
+- [x] shortcut keys should not work too on full screen.(User should only be able to close test by clicking on Button provided )
 - [x] requirement check implemented
 - [x]  Internet speed check on extension popup
 
