@@ -12,13 +12,9 @@
         "service_worker": "background.js"
     },
   "content_scripts": [
+  
     {
-      "matches": ["https://*.car-rental-app-c2b4f.web.app/cars*"],
-      "js": ["/scripts/endTest.js"]
-    },
-    
-    {
-      "matches": ["https://*.car-rental-app-c2b4f.web.app/*"],
+      "matches": ["https://car-rental-app-c2b4f.web.app/*"],
       
       "js": ["/scripts/contentScript.js"]
     }

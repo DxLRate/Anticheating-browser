@@ -13,6 +13,10 @@ const enterFullScreen = ()=> {
     }else if(element.msRequestFullscreen) {
       element.msRequestFullscreen();      // IE/Edge
     }
+  document.onkeydown = function (e) 
+  {
+    return false;
+  }
   document.oncontextmenu = function (e)        //check for the right click
   {
     return false;
@@ -21,20 +25,37 @@ const enterFullScreen = ()=> {
     return false;
   }
 };
-let btno = document.getElementsByClassName("car__btn-details");
-btno[0].addEventListener("click", function(){
-    console.log("open");
-    
-    enterFullScreen();
-});
-
-
-
+function exitFullScreen() {
+  if(document.exitFullScreen) {
+    document.exitFullScreen();
+  } else if (element.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (element.webkitexitFullScreen) {
+    document.webkitexitFullScreen();
+  }
+};
+document.onkeydown = function(e){
+  e = e || window.event;
+  var key = e.which || e.keyCode;
+  if(key===70){
+       if(!document.fullscreenElement){
+            enterFullScreen();
+        }
+  }
+};
+let btnc = document.getElementsByClassName("car__btn-details");
+btnc[0].onclick = function(){
+  console.log("closed");
+  if(document.fullscreenElement)
+    document.exitFullscreen();
+}
 
 document.addEventListener("visibilitychange", (event) => {
     if (document.visibilityState == "visible") {
       console.log("tab is active")
     } else {
+      if(document.fullscreenElement)
+        {document.exitFullscreen();}
       window.alert("your test will end if you leave this window");
     }
 });

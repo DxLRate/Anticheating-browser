@@ -31,10 +31,12 @@ Now  we are ready to add this project as an extension in our Chrome browser.<br/
 - [X]  	The browser should open in full screen mode.
 - [x]  Pop up should be shown when someone switches between 2 tabs or Application.
 - [x]	More than one tab can’t be opened.
+- [x] close the tab by the normal close button [shortcut keys should not work too].(User should only be able to close tab by clicking on Button provided )
 - [x]  Internet speed check on extension popup
 
 ## Instruction for usage
-- for prototype purpose I have implemented this project on one of my projects 'https://www.car-rental-app-c2b4f.web.app'. But you can can implement all the features on any specific URL by just changing 'matches' parameter under 'content_scripts' in manifest.json.  
-- If you click on 'details' of first car item window will go on full screen mode.
+- for prototype purpose I have implemented the functionalities of this project on one of my deployed project 'https://www.car-rental-app-c2b4f.web.app'. But all the features can be implemented on any specific URL by just changing 'matches' parameter under 'content_scripts' in manifest.json and adjusting some changes in contentscript.  
+- For demo purpose I have set the full screen mode to 'f' key but it can be set to click of start test button. 
+- If you click on 'details' of first car item window will exit from full screen mode.
 - If you try to switch applications or tabs you will get alert warning popup.
-- Also if you open more than one tabs you will again get warning popup.  
+- Also if more than one tabs are opened, you will again get warning popup.  

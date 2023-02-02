@@ -1,8 +1,8 @@
 
-// document.onkeydown = function (e) 
-//  {
-//   return false;
-//  }
+document.onkeydown = function (e) 
+ {
+  return false;
+ }
 // document.oncontextmenu = function (e)        //check for the right click
 // {
 //     return false;
@@ -12,37 +12,7 @@
 //     return false;
 // }
 
-function toggleFullScreen() {
-    console.log("full screen");
-    var docElm = document.documentElement;
-    if ((document.fullScreenElement && document.fullScreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-        if (docElm.requestFullscreen) {
-            docElm.requestFullscreen();
-        }
-        else if (docElm.mozRequestFullScreen) {
-            docElm.mozRequestFullScreen();
-        }
-        else if (docElm.webkitRequestFullScreen) {
-            docElm.webkitRequestFullScreen();
-        }
-    }
-    else {
 
-
-        if (document.exitFullscreen) {
-            document.exitFullscreen();
-        }
-        else if (document.mozCancelFullScreen) {
-            document.mozCancelFullScreen();
-        }
-        else if (document.webkitCancelFullScreen) {
-            document.webkitCancelFullScreen();
-        }
-
-
-
-    }
-}
 
 const btnint = document.getElementById('ichk');
 btnint.addEventListener('click', function(){
